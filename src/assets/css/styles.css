@@ -1,0 +1,150 @@
+body {
+    font-family: Roboto, sans-serif !important;
+}
+
+.head__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form__field {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.form__field input,
+.form__field__pass {
+    border: 1px solid #bdbcbc;
+    border-radius: 4px;
+    height: 40px;
+    padding: 12px 8px;
+    width: 320px;
+    transition: all 300ms;
+}
+
+.form__field__pass {
+    padding: 12px 8px 12px 0;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+    color: #bdbcbc !important;
+}
+
+.form__field input:focus-visible {
+    outline: none;
+    border: 4px solid #77c1ff;
+}
+
+.form__field__pass input:focus-visible {
+    outline: none;
+    border: none;
+}
+
+.form__field__pass input {
+    border: none;
+}
+
+.form__field__pass:focus-within {
+    border: 4px solid #77c1ff;
+}
+
+.form__field__pass .v-icon {
+    cursor: pointer;
+}
+
+.form__field span {
+    color: red;
+    display: block;
+    font-size: 12px;
+}
+
+.form__login {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.form__login span {
+    display: block;
+    font-size: 14px;
+}
+
+.form__login .v-btn {
+    font-size: 16px;
+    font-weight: bold;
+    height: 48px;
+    letter-spacing: normal;
+    padding: 10px 32px;
+    text-transform: none;
+    width: 163px;
+}
+
+.btn-active {
+    background: #ff5a60 !important;
+    box-shadow: none;
+    color: white !important;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    min-width: 112px;
+    text-transform: none;
+}
+
+.btn-no-active {
+    background-color: #eaeaea !important;
+    box-shadow: none;
+    color: #8c8c8c !important;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    min-width: 112px;
+    text-transform: none;
+}
+
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg {
+    background-color: #eaeaea !important;
+}
+
+.theme--light.v-btn.v-btn--disabled,
+.theme--light.v-btn.v-btn--disabled .v-btn__loading,
+.theme--light.v-btn.v-btn--disabled .v-icon {
+    color: #8c8c8c !important;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+
+@media (max-width: 499px) {
+    .form__field input,
+    .form__field__pass {
+        width: 288px;
+    }
+}
